@@ -1,0 +1,12 @@
+/*This 1st section contains the "variables" section for all variables featured
+in this stylesheet, including color, etc */
+
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
+/* This last section includes the resizing options for my website, based on the 
+adjusted width of the website, whether a window is adjust or whether seen on 
+another device, such as mobile, tablet, etc. */
+@media
