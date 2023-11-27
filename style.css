@@ -1,11 +1,28 @@
 #header {
+    position: fixed;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: 100;
     background-color: blue;
-    background-image: url;
+    background-image: url("./media/MountainGraph.gif");
     background-position: auto;
+    background-size: cover;
     font-size: 55px;
     font-family: Verdana;
     font-weight: 10px;
     text-align: right;
+}
+
+#backgroundImage {
+    background-color: var(--white);
+    background-position: center;
+    background-size: auto;
+    background-image: url("./media/DataViz1.gif")
+}
+
+#absolute-box {
+
 }
 
 /*This 1st section contains the "variables" section for all variables featured
