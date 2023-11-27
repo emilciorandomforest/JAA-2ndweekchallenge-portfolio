@@ -1,3 +1,13 @@
+#header {
+    background-color: blue;
+    background-image: url;
+    background-position: auto;
+    font-size: 55px;
+    font-family: Verdana;
+    font-weight: 10px;
+    text-align: right;
+}
+
 /*This 1st section contains the "variables" section for all variables featured
 in this stylesheet, including color, etc */
 
