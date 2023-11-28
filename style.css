@@ -49,18 +49,52 @@
     color: var(--black);
 }
 
-#featuredProjects {
-    background-position: center;
+h4 {
+    font-family: Helvetica;
+    color: var(--black);
+    justify-content: center;
+    align-items: center;
+}
+
+#FeaturedProjects {
+    margin: 0 5%;
     display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'Climate Math Physics';
+    background-position: center;
+}
+
+.FeaturedProjectsArea {
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+}
+
+#Climate {
+    grid-area: 'Climate';
+    background-image: url("./media/Daily\ Air\ Temp.gif");
+    background-size: auto;
+}
+
+#Math {
+    grid-area: 'Math';
+    background-image: url('./media/DataViz1.gif')
+}
+
+#Physics {
+    grid-area: 'Physics';
+    background-image: ;
 }
 
 .heading {
     background-color: rgba(0,0,0,0.6);
-    padding: 10px;
     height: 20px;
     font-size: 16px;
-    border-bottom: 5px teal;
-    
+    border-bottom: 10px teal;
+
 }
 
 /*This section below contains the footer for my page*/
