@@ -3,7 +3,6 @@
     font-family: Arial;
     padding: 10px;
     margin: 10px;
-    background-color: rgb(40, 44, 44);
 }
 
 /* This is the universal rule selector*/
@@ -14,36 +13,38 @@ header {
     height: 200px;
     width: 100%;
     background-color: teal;
-    background-image: url(./media/Blue\ Polygonal.jpeg);
-    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 16px;
     font-weight: 1px;
-    justify-content: flex-end;
+
+}
+
+h1 {
+    font-size: 150%;
 }
 
 nav ul {
     display: flex;
     background-color: teal;
     font-family: Tahoma;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: right;
 }
 
 nav a {
     color: rgb(61, 81, 81);
+    text-decoration: none;
 }
 
 nav a:hover {
     color: var(--white);
 }
 
-#backgroundImage {
-    background-color: var(--white);
+img {
     background-position: center;
-    background-size: auto;
-    background-image: url("./media/DataViz1.gif")
+    width: 100%;
+    height: 60px;
 }
 
 .p {
@@ -59,10 +60,10 @@ nav a:hover {
     color: var(--black);
 }
 
-h3, h4 {
-    display: flex
-    font-family: Helvetica;
-    color: var(--white);
+h2 {
+    display: flex;
+    font: Helvetica;
+    color: var(--black;
     justify-content: center;
     align-items: center;
 }
