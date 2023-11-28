@@ -44,7 +44,7 @@ nav a:hover {
 .Banner {
     background-position: center;
     width: 100%;
-    height: 60px;
+    height: 10px;
 }
 
 section {
@@ -63,10 +63,11 @@ h2, h3 {
 }
 
 .ProfilePhoto {
-    display: flex;
+    display: block;
     height: 250px;
     width: 200px;
-    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
@@ -127,6 +128,7 @@ p {
 
 #Image1 {
     grid-area: Image1;
+    background-image: url('./media/GPS.jpg')
 }
 
 #Textbox1 {
@@ -141,10 +143,12 @@ p {
 
 #Image2 {
     grid-area: Image2;
+    background-image: url('./media/Diary.jpeg')
 }
 
 #Calculator2 {
     grid-area: Calculator2;
+    background-image: url('./media/Dataset1.jpg')
 }
 
 .ProjectsArea {
