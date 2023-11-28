@@ -3,6 +3,7 @@
     font-family: Arial;
     padding: 10px;
     margin: 10px;
+    background-color: rgb(4, 102, 102);
 }
 
 /* This is the universal rule selector*/
@@ -12,19 +13,20 @@
     top: 0;
     height: 200px;
     width: 100%;
-    z-index: 100;
     background-color: teal;
-    background-image: ;
-    background-position: center;
-    background-size: ;
-    font-size: 20px;
+    background-image: url('./media/Waves.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
     font-weight: 1px;
-    text-align: right;
+    justify-content: flex-end;
 }
 
-#nav {
+#nav ul {
     display: flex;
-    background-color: black;
+    background-color: teal;
+    font-family: Tahoma;
     justify-content: center;
     align-items: center;
 }
@@ -37,7 +39,7 @@
 }
 
 .p {
-    color: var(--black);
+    color: var(--white);
     font-family: Arial;
 }
 
@@ -49,9 +51,9 @@
     color: var(--black);
 }
 
-h4 {
+h3, h4 {
     font-family: Helvetica;
-    color: var(--black);
+    color: var(--white);
     justify-content: center;
     align-items: center;
 }
@@ -60,7 +62,7 @@ h4 {
     margin: 0 5%;
     display: grid;
     grid-template-rows: 300px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'Climate Math Physics';
     background-position: center;
 }
@@ -86,7 +88,8 @@ h4 {
 
 #Physics {
     grid-area: 'Physics';
-    background-image: ;
+    background-image: url('./media/Quantum.gif');
+    background-size: auto;
 }
 
 .heading {
@@ -118,4 +121,8 @@ in this stylesheet, including color, etc */
 /* This last section includes the resizing options for my website, based on the 
 adjusted width of the website, whether a window is adjust or whether seen on 
 another device, such as mobile, tablet, etc. */
-@media
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
