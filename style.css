@@ -110,14 +110,41 @@ p {
 #projectsGrid {
     margin: 0 5%;
     display: grid;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-rows: 250px 250px 250px 250px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    'calculator calculator calculator'
-    'Image1 Image1 Image1'
-    'Textbox1 Textbox1 Textbox1'
-    'Textbox2 Textbox2 Textbox2'
+    "calculator calculator calculator"
+    "Image1 Textbox1 Textbox1"
+    "Textbox2 Textbox2 Image2"
+    "Calculator2 Calculator2 Calculator2"
     ;
+}
+
+#calculator {
+    grid-area: calculator;
+    background-image: url('./media/Calculator\ Vector.jpeg');
+}
+
+#Image1 {
+    grid-area: Image1;
+}
+
+#Textbox1 {
+    grid-area: Textbox1;
+    background-image: url('./media/Textbox.jpeg')
+}
+
+#Textbox2 {
+    grid-area: Textbox2;
+    background-image: url('./media/Textbox.jpeg')
+}
+
+#Image2 {
+    grid-area: Image2;
+}
+
+#Calculator2 {
+    grid-area: Calculator2;
 }
 
 .ProjectsArea {
@@ -129,34 +156,6 @@ p {
     display: grid;
     align-content: end;
 }
-#calculator {
-    grid-area: 'calculator';
-    background-image: url('./media/Calculator\ Vector.jpeg');
-}
-
-#Image1 {
-    grid-area: 'Image1';
-}
-
-#Textbox1 {
-    grid-area: 'Textbox1';
-}
-
-#Textbox2 {
-    grid-area: 'Textbox2';
-}
-
-#Image2 {
-    grid-area: 'Image2';
-}
-
-#Calculator2 {
-    grid-area: 'Calculator2';
-}
-
-
-
-
 
 .heading {
     background-color: rgba(0,0,0,0.6);
