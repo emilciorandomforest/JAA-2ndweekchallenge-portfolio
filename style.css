@@ -3,7 +3,7 @@
     font-family: Arial;
     padding: 10px;
     margin: 10px;
-    background-color: rgb(4, 102, 102);
+    background-color: rgb(40, 44, 44);
 }
 
 /* This is the universal rule selector*/
@@ -14,7 +14,7 @@
     height: 200px;
     width: 100%;
     background-color: teal;
-    background-image: url('./media/Waves.gif');
+    background-image: url(./media/Blue\ Polygonal.jpeg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,6 +52,7 @@
 }
 
 h3, h4 {
+    display: flex
     font-family: Helvetica;
     color: var(--white);
     justify-content: center;
@@ -92,22 +93,68 @@ h3, h4 {
     background-size: auto;
 }
 
+#Projects {
+    margin: 0 5%;
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'Calculator Calculator Calculator'
+    'Image1 Textbox1 Textbox1'
+    'Textbox2 Textbox2 Image2'
+    'Calculator2 Calculator2 Calculator2';
+    background-position: center;
+}
+
+#Calculator {
+    grid-area: 'Calculator';
+    background-image: url('./media/Calculator\ Vector.jpeg')
+}
+
+#Image1 {
+    grid-area: 'Image1';
+}
+
+#Textbox1 {
+    grid-area: 'Textbox1';
+}
+
+#Textbox2 {
+    grid-area: 'Textbox2';
+}
+
+#Image2 {
+    grid-area: 'Image2';
+}
+
+#Calculator2 {
+    grid-area: 'Calculator2';
+}
+
+.ProjectsArea {
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: grid;
+
+}
+
 .heading {
     background-color: rgba(0,0,0,0.6);
     height: 20px;
     font-size: 16px;
-    border-bottom: 10px teal;
+    border-bottom: 20px teal;
+    align-content: end;
 
 }
 
 /*This section below contains the footer for my page*/
 
-.footer {
+footer {
     display: flex;
-    position: fixed;
-    width: 100%;
+    justify-content: center;
+    color: var(--white);
+    padding: 2%;
     background-color: teal;
-    text-align: center;
 }
 
 /*This 1st section contains the "variables" section for all variables featured
