@@ -8,7 +8,7 @@
 
 /* This is the universal rule selector*/
 
-#header {
+header {
     display: flex;
     top: 0;
     height: 200px;
@@ -23,12 +23,20 @@
     justify-content: flex-end;
 }
 
-#nav ul {
+nav ul {
     display: flex;
     background-color: teal;
     font-family: Tahoma;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: right;
+}
+
+nav a {
+    color: rgb(61, 81, 81);
+}
+
+nav a:hover {
+    color: var(--white);
 }
 
 #backgroundImage {
